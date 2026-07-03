@@ -1,61 +1,47 @@
 /*
- * ------------------------------------------------------------
- * Project : LoRaWAN-Assisted Cloud-Controlled Smart Irrigation
- * Client  : Naadan Agro Farm, Thumba
+ * ============================================================================
+ * Project : LoRaWAN-Assisted Cloud-Controlled Automated Irrigation System
+ *
+ * Client  : Naadan Agro Farm, Thumba, Kerala, India
  *
  * Description:
- * Firmware for the ESP32 field node responsible for
- * receiving LoRa commands, controlling irrigation devices,
- * reading soil moisture, and transmitting responses to
- * the gateway.
+ * This firmware runs on the ESP32-based field node of the smart irrigation
+ * system. It receives irrigation commands from the LoRa gateway, controls
+ * the irrigation valve and water pump, acquires real-time soil moisture
+ * readings, and transmits node status and sensor responses back to the
+ * gateway using LoRa communication.
  *
- * Hardware:
- * - ESP32
- * - SX1278 LoRa Module (433 MHz)
+ * Features:
+ * • LoRa-based wireless communication (433 MHz)
+ * • Receives irrigation control commands
+ * • Controls water pump and solenoid valve
+ * • Reads capacitive soil moisture sensor
+ * • Sends acknowledgement and response packets
+ * • Supports remote monitoring through AWS IoT Core via the gateway
+ *
+ * Hardware Used:
+ * - ESP32 Development Board
+ * - SX1278 (Ra-02) LoRa Module
  * - Capacitive Soil Moisture Sensor
  * - Relay Module
+ * - Solenoid Valve
+ * - Water Pump
  *
- * Team:
- * - Gokul SS
+ * Technologies:
+ * ESP32 | LoRa | MQTT | AWS IoT Core | IoT | Embedded Systems
+ * Precision Agriculture | Cloud Computing
+ *
+ * Team Members:
+ * - Gokul S S
  * - Anantha Krishnan H
  * - Anudeep Krishna R
  * - Aromal P Nair
  *
  * Guide:
  * Mr. Aswin R. B.
- * ------------------------------------------------------------
+ *
+ * Achievement:
+ * 🏆 Best Mini Project Award
+ *
+ * ============================================================================
  */
-
- // =========================
-// Libraries
-// =========================
-#include <SPI.h>
-#include <LoRa.h>
-#include <WiFi.h>
-
-// =========================
-// LoRa Configuration
-// =========================
-#define LORA_SS    33
-#define LORA_RST   32
-#define LORA_DIO0  26
-
-// =========================
-// Packet Definitions
-// =========================
-#define NodeId      0x1A
-#define NodeCmd     0x1B
-#define NodeResReq  0x1C
-#define ValveOn     0x11
-#define ValveOff    0x12
-#define MotorOn     0x13
-#define MotorOff    0x14
-#define MoistureReq 0x15
-#define NodeRes     0x1D
-
-// =========================
-// Global Variables
-// =========================
-uint8_t task[5];
-uint8_t response[5];
-
