@@ -54,7 +54,12 @@ This project automates irrigation by monitoring soil moisture in real time and m
 
 ## 📷 Prototype
 
-(Add photos here)
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/b4049359-d86f-496b-a087-c05963d6a141" /> gateway
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/b8a776b4-62c4-460e-ade9-dd86c3bbe473" />moisture sensor node
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/38c6e316-b01c-4f66-81b6-423e9158c9f9" /> motor control node with relay and Arduino+Lorashield
+
+
+
 
 ---
 
