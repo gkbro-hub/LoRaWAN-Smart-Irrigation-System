@@ -79,7 +79,7 @@ This project automates irrigation by monitoring soil moisture in real time and m
 - Aromal P Nair
 - Gokul SS
 
-**Guide:** Mr. Aswin R B
+**Guide:** Mr. Aswin R B , Assistant Professor , MBCET 
 
 ---
 
