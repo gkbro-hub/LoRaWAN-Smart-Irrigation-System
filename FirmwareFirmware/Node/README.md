@@ -1,3 +1,28 @@
+/*
+-------------------------------------------------------
+Project:
+LoRaWAN-Assisted Cloud-Controlled Smart Irrigation System
+
+Client:
+Naadan Agro Farm, Thumba
+
+Authors:
+Gokul SS
+Anantha Krishnan H
+Anudeep Krishna R
+Aromal P Nair
+
+Guide:
+Mr. Aswin R. B.
+
+Description:
+Firmware for the ESP32 field node. The node receives
+LoRa commands from the gateway, controls irrigation
+devices, reads soil moisture, and sends responses
+back through the LoRa network.
+-------------------------------------------------------
+*/
+
 # Field Node Firmware
 
 This firmware runs on the ESP32-based field node responsible for monitoring soil moisture and controlling irrigation devices.
