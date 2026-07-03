@@ -99,8 +99,8 @@ LoRaWAN packet delivery ratio across spreading factors SF7, SF9, and SF10.
 
 <img width="709" height="539" alt="image" src="https://github.com/user-attachments/assets/ef3421fe-b03b-42d4-89d1-9da0f4ce57a7" />
 
-
 Simulated node battery level over 30 days: LoRaWAN (deep sleep) vs. Wi-Fi (active).
+
 ---
 
 ## 👨‍💻 Team
