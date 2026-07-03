@@ -75,8 +75,11 @@ This project automates irrigation by monitoring soil moisture in real time and m
 - Remote monitoring through AWS IoT Core
 - Scalable architecture for precision agriculture
 <img width="714" height="616" alt="image" src="https://github.com/user-attachments/assets/4d0bcfc3-7a07-4d2c-943c-ab19060fa46c" />Soil moisture variation and irrigation control events for Node 1 over 8 hours
+
 <img width="678" height="462" alt="image" src="https://github.com/user-attachments/assets/7d03c56e-9932-42fe-846a-b422680772f0" />Fig. 3. Irrigation command response (START/STOP) waveform for Node 1.
+
 <img width="698" height="545" alt="image" src="https://github.com/user-attachments/assets/b62cf2c2-bb0c-4545-967f-8c06058cab6a" />LoRaWAN packet delivery ratio across spreading factors SF7, SF9, and SF10.
+
 <img width="709" height="539" alt="image" src="https://github.com/user-attachments/assets/4d967205-a3fc-4263-baf1-083a5cb83db9" />Simulated node battery level over 30 days: LoRaWAN (deep sleep) vs. Wi-Fi (active).
 ---
 
